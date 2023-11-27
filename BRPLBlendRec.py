@@ -11,6 +11,7 @@ sheet_id = "1nuNtz1jwXyd56AD5R-RQT2KRQXP-ConsV49HIZniSzo"
 r = "https://docs.google.com/spreadsheets/d/{}/export?format=csv".format(sheet_id)
 df = pd.read_csv(r)
 df = df.dropna()
+df['Stock'][df['Stock'] < 10] = 0
 
 # Flatten the nested dictionary
 def flatten_dict(d, parent_key='', sep='_'):
