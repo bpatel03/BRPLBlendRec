@@ -1,0 +1,2 @@
+worker: python BRPLBlendRec.py
+
