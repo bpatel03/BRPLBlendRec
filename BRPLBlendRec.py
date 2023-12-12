@@ -134,8 +134,8 @@ def blend_Opt_nostock(df,fe,si,al,loi):
     AL = al
     LOI = loi
 
-    for upBound in range(0, 11):
-        upBound /= 10  # Convert to decimal
+    for upBound in range(0, 6):
+        upBound /= 5  # Convert to decimal
         
         # Create the linear programming problem
         prob = LpProblem("Ore_Blending", LpMinimize)
@@ -221,8 +221,8 @@ def blend_Opt_withstock(df,act_tot_feed,fe,si,al,loi):
     AL = al
     LOI = loi
 
-    for upBound in range(0, 11):
-        upBound /= 10  # Convert to decimal
+    for upBound in range(0, 6):
+        upBound /= 5  # Convert to decimal
         
         # Create the linear programming problem
         prob = LpProblem("Ore_Blending", LpMinimize)
